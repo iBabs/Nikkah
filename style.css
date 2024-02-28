@@ -7,7 +7,7 @@
 body{
     height: 100vh;
     overflow: hidden;
-    color: white;
+    color: #09f9e1;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
@@ -31,8 +31,11 @@ video{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 255, 255, 0.215);
+    background-color: #07070737;
     border-radius: 10px;
+    max-height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .text div{
     line-height: 20px;
