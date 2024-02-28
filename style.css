@@ -1,20 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     overflow: hidden;
     color: #09f9e1;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+main {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-video{
+video {
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -23,7 +31,8 @@ video{
     object-fit: cover;
     object-position: center;
 }
-.text{
+
+.text {
     background-color: #05184259;
     backdrop-filter: blur(3px);
     padding: 2rem;
@@ -33,22 +42,25 @@ video{
     justify-content: center;
     background-color: #07070737;
     border-radius: 10px;
-    max-height: 80%;
+    max-height: 95%;
     overflow-y: auto;
     overflow-x: hidden;
 }
-.text div{
+
+.text div {
     line-height: 20px;
 }
-.text h1{
+
+.text h1 {
     margin-bottom: 20px;
     color: #52eded;
 }
 
-details{
-    border-bottom: solid 1px #eeeeee ;
+details {
+    border-bottom: solid 1px #eeeeee;
     width: 400px;
 }
+
 details summary {
     cursor: pointer;
     padding: 4px;
@@ -56,22 +68,31 @@ details summary {
     display: flex;
     justify-content: space-between;
 }
+
 details p {
     /* background-color: #eeeeee; */
     padding: 4px;
     margin: 0;
 }
-details summary > * {
+
+details summary>* {
     display: inline;
 }
+.rt{
+    color: #f80808;
+}
+.note{
+    background-color: #9d910fcb;
+    font-size: 24px;
+}
 
-@media only screen and (max-width:420px){
-    .text{
+
+@media only screen and (max-width:420px) {
+    .text {
         max-width: 95%;
     }
-    details{
+
+    details {
         width: 100%;
     }
 }
-
-
