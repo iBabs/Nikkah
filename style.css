@@ -65,6 +65,13 @@ details summary > * {
     display: inline;
 }
 
-
+@media only screen and (max-width:420px){
+    .text{
+        max-width: 95%;
+    }
+    details{
+        width: 100%;
+    }
+}
 
 
